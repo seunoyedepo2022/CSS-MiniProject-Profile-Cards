@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 2rem;
+    min-height: 100vh;
+  
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, darkgray);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header,
+  nav,
+  main,
+  footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  
+  header,
+  footer {
+    position: sticky;
+    background-color: cadetblue;
+    color: whitesmoke;
+  }
+  
+  header {
+    top: 0;
+  }
+  
+  nav {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  footer {
+    bottom: 0;
+  }
+  
+  /* || XSMALL SCREEN */
+  
+  @media screen and (min-width: 320px) {
+    body {
+      background-color: steelblue;
+      background-image: radial-gradient(whitesmoke, steelblue);
+    }
+  }
+  
+  /* SMALL SCREEN */
+  @media screen and (min-width: 576px) {
+    body {
+      background-color: green;
+      background-image: radial-gradient(whitesmoke, green);
+    }
+    nav {
+      display: none;
+    }
+  }
+  
+  /* MEDIUM SCREEN */
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: gold;
+      background-image: radial-gradient(whitesmoke, gold);
+    }
+  }
+  
+  /* LARGE SCREEN */
+  @media screen and (min-width: 992px) {
+    body {
+      background-color: firebrick;
+      background-image: radial-gradient(whitesmoke, firebrick);
+    }
+  
+    /* XLARGE SCREEN */
+    @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+      body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+      }
+    }
+  }
+  
